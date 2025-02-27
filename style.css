@@ -1,0 +1,67 @@
+/**********
+ * Reset some basic things in the css.
+ * This helps the different browsers render things in the same way, and
+ * helps give an intuitive starting point to work from.
+ */
+
+/* Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* Add accessible line-height */
+  line-height: 1.5;
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/**********
+ * Overall page setup
+ */
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background: #f8fafc;
+}
+
+.widget-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-height: 400px;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+
+/**********
+ * Specific widget styles
+ */
+
+.btn {
+  background: #4f39f6;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 14px;
+  border-radius: 3px;
+  border: 0 solid;
+  cursor: pointer;
+}
+
+.emoji {
+  font-size: 8em;
+}
